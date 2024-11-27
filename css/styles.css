@@ -1,31 +1,43 @@
-:root{
-  --primary-text-color:#757575;
-  --title-text-color:#212121;
-  --accent-color:#2196f3;
-  --active-color:violet;
+html {
+  box-sizing: border-box;
 }
-body {
-  background-color: #fdfafa;
-  color: rgba(0.0.8);
 
-  font-family: Roboto,sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --active-color: violet;
+  --background-color: #2f303a;
+  --footer-color:#ffffff;
+}
+
+body {
+  margin: 0;
+  background-color: #fdfafa;
+  color: rgba(0.8);
+
+  font-family: Roboto, sans-serif;
   letter-spacing: -0.025em;
 }
 
 a {
-  display: block;
-
-  font-family: Roboto,sans-serif;
+  font-family: Roboto, sans-serif;
   color: var(--title-text-color);
-font-weight: 500;
-font-size: 14px;
-line-height: 1.1;
-text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 a:active {
@@ -34,7 +46,7 @@ a:active {
 
 .web {
   color: #2196f3;
-  font-family: raleway,sans-serif;
+  font-family: raleway, sans-serif;
 }
 
 ul {
@@ -42,6 +54,8 @@ ul {
 }
 
 .buttonprimary {
+  width: 200px;
+  height: 50px;
   color: #fdfafa;
   background-color: #2196f3;
 }
@@ -55,21 +69,25 @@ ul {
   color: #2196f3;
 }
 
-p{
-  color: var(--primary-text-color) ;
+p {
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
 
-button{
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
 }
 
-h1{
+h1 {
+  margin: 0;
   color: #ffff;
   font-weight: 900;
   font-size: 44px;
@@ -78,12 +96,106 @@ h1{
   text-align: center;
 }
 
-h2{
+h2 {
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
 }
 
-.hero{
-  background-color:#2F303A;
+.hero {
+  height: 600px;
+  background-color: #2f303a;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*nav*/
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0px;
+  height: 80px;
+}
+
+/*site nav*/
+
+.site-nav {
+  display: flex;
+  margin-left: 95px;
+}
+
+.site-nav a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav li + li {
+  padding-left: 50px;
+}
+
+/*adres nav*/
+
+.adres {
+  display: flex;
+  margin-left: auto;
+}
+
+.adres a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.adres li + li {
+  padding-left: 50px;
+}
+
+.title {
+  width: 696px;
+  height: 120px;
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
+
+.info{
+  display:flex;
+}
+
+.info li+ li {
+  padding-left: 30px;
+}
+
+.work{
+  display: flex;
+}
+
+.work li+li{
+  padding-left: 30px;
+}
+
+.team{
+  display: flex;
+}
+
+.team li+li{
+  padding-left: 30px;
+  text-align: center;
+}
+
+.footer{
+ background-color: var(--background-color);
+}
+
+.footer a{
+  color: var(--footer-color);
+}
+
+.footer p{
+  color: var(--footer-color);
 }
