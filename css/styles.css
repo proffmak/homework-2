@@ -14,7 +14,7 @@ html {
   --accent-color: #2196f3;
   --active-color: violet;
   --background-color: #2f303a;
-  --footer-color:#ffffff;
+  --footer-color: #ffffff;
 }
 
 body {
@@ -51,6 +51,7 @@ a:active {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .buttonprimary {
@@ -86,6 +87,17 @@ button {
   line-height: 1.6;
 }
 
+.buttonmenu{
+  height: 38px;
+  color: var(--title-text-color);
+  background-color: var(--footer-color);
+}
+
+.buttonmenu:hover,.buttonmenu:focus{
+  color: var(--footer-color);
+  background-color: var(--accent-color);
+}
+
 h1 {
   margin: 0;
   color: #ffff;
@@ -109,6 +121,8 @@ h2 {
 
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -163,39 +177,79 @@ h2 {
   padding-bottom: 280px;
 }
 
-.info{
-  display:flex;
-}
-
-.info li+ li {
-  padding-left: 30px;
-}
-
-.work{
+.info {
   display: flex;
 }
 
-.work li+li{
+.info li + li {
   padding-left: 30px;
 }
 
-.team{
+.work {
   display: flex;
 }
 
-.team li+li{
+.work li + li {
+  padding-left: 30px;
+}
+
+.team {
+  display: flex;
+}
+
+.team li + li {
   padding-left: 30px;
   text-align: center;
 }
 
-.footer{
- background-color: var(--background-color);
+.footer {
+  background-color: var(--background-color);
 }
 
-.footer a{
+.footer a {
   color: var(--footer-color);
 }
 
-.footer p{
+.footer p {
   color: var(--footer-color);
 }
+
+/*page 2*/
+
+.sectionmenu{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.menu {
+  padding-bottom: 34px;
+}
+
+.menu-button {
+  display: flex;
+  margin: 0;
+  justify-content: center
+}
+
+.menu-button li + li {
+  margin-left: 5px;
+  height: 38px;
+}
+
+.selection {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.selectionpng{
+margin-right: 30px;
+margin-bottom: 30px;
+}
+
+.selection :nth-child(3n){
+  margin: 0;
+}
+
